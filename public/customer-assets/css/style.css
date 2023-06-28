@@ -1,0 +1,435 @@
+
+/*-----------------------------------------------------------------------
+table of content
+-------------------------------------------------------------------------* /
+
+"Melissa - is a Ultimate Multipurpose  Premium  HTML5 Responsive Templeate by HTMLmate Team. You can use this
+for anykind of multi-purpose Bussiness"
+
+File:           CSS Base
+Version:        1.1
+Last change:
+Author:         HTMLmate
+
+
+/* ----------------------------
+* 1 = Fonts
+* 2 = Global
+* 3 = Header
+* 4 = Ways of help
+* 5 = Countdown
+* 6 = Recent Causes
+* 7 = Our Impact
+* 8 = Can We Do
+* 9 = Video bg section
+* 10 = Latest news
+* 11 = Partner
+* 12 = Footer
+* 13 = page head section
+
+/*-----------------------------------------------------------------------
+End of Table of Content
+-------------------------------------------------------------------------* /
+
+
+/*-----------------------------------------------------------------------
+fonts [*1]
+-------------------------------------------------------------------------*/
+@font-face {
+	font-family: 'Vazir';
+	src: url('../fonts/Vazir.eot');
+	src: local('../fonts/Vazir'), url('../fonts/Vazir.woff') format('woff'), url('../fonts/Vazir.ttf') format('truetype'), url('../fonts/Vazir.svg') format('svg');
+}
+/*-----------------------------------------------------------------------
+Global
+-------------------------------------------------------------------------*/
+* { box-sizing: border-box;font-family: 'Vazir'; }
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0px;
+	background-color: #fff;
+	color: #757575;
+	direction: rtl;
+	font-family: 'Vazir';
+	-webkit-font-smoothing: antialiased;
+
+}
+
+.ul-li ul {
+	margin:0;
+	padding: 0;
+}
+.ul-li  li {
+	display: inline-block;
+	list-style: none;
+}
+.ul-li-block li {
+	display: block;
+}
+section {
+	overflow: hidden;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	transition: .3s all ease-in-out;
+	color: inherit;
+
+}
+.form-control:focus,button:visited,button.active,button:hover,button:focus,input:visited,input.active,input:hover,
+input:focus,textarea:hover,textarea:focus,a:hover,a:focus,a:visited,a.active,select,select:hover, select:focus, select:visited {
+	outline: none;
+	box-shadow: none;
+	text-decoration: none;
+	color: inherit;
+}
+.form-control {
+	box-shadow: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	font-weight: normal;
+}
+
+.section-content {
+	padding: 100px 0px;
+}
+.orange-gred {
+	background: -moz-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #ee0979), color-stop(100%, #ff6a00));
+	background: -webkit-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
+	background: -o-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
+	background: -ms-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.deep-black {
+	color: #040404;
+}
+.pink {
+	color: #f11965;
+}
+
+@-webkit-keyframes video-icon {
+	0% {
+		-webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		opacity: 0;
+	}
+}
+
+@keyframes video-icon {
+	0% {
+		-webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		opacity: 0;
+	}
+}
+
+
+@-moz-keyframes zooming { 0% { -moz-transform: scale(1, 1); transform: scale(1, 1); }
+50% { -moz-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
+100% { -moz-transform: scale(1, 1); transform: scale(1, 1); } }
+@-webkit-keyframes zooming { 0% { -webkit-transform: scale(1, 1); transform: scale(1, 1); }
+50% { -webkit-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
+100% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } }
+@keyframes zooming { 0% { -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -webkit-transform: scale(1, 1); transform: scale(1, 1); }
+50% { -moz-transform: scale(1.1, 1.1); -ms-transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
+100% { -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -webkit-transform: scale(1, 1); transform: scale(1, 1); } }
+
+/*---------------------------------------------
+Margin settings
+-----------------------------------------------*/
+.mt25{margin-top: 25px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mt50{margin-top: 50px;}
+.mt10{margin-top: 10px;}
+.mt65{margin-top: 65px;}
+.mr30{margin-right: 30px;}
+.ml30{margin-left: 30px;}
+
+/*-----------------------------------------------
+Padding settings
+------------------------------------------------*/
+.pb10{padding-bottom: 10px;}
+.pb30{padding-bottom: 30px;}
+.pb20{padding-bottom: 20px;}
+.pb40{padding-bottom: 40px;}
+.pb50{padding-bottom: 50px;}
+.pb60{padding-bottom: 60px;}
+.pt35{padding-top: 35px;}
+.pt25{padding-top: 25px;}
+.pt15{padding-top: 15px;}
+.pt20{padding-top: 20px;}
+.no-padding{padding: 0;}
+
+.table-disply {
+	display: table;
+	width: 100%;
+}
+
+/*-----------------------------------------------
+font-size settings
+------------------------------------------------*/
+.font-30px{
+    font-size: 30px;
+}
+
+
+/*-----------------------------------------------------------------------
+Start of footer sectiion
+-------------------------------------------------------------------------*/
+.footer-area-section {
+	background-color: #dddddd;
+
+}
+.footer-content {
+	max-width: 265px;
+}
+.footer-social ul li {
+	margin-right: 15px;
+}
+.footer-social ul li span {
+	color: #040404;
+	transition: .3s all ease-out;
+}
+.footer-social ul li span:hover {
+	color: #ff6a00;
+}
+.widgettile {
+	font-size: 16px;
+	font-weight: 600;
+}
+.service-list-item li {
+	margin-bottom: 15px;
+}
+.service-list-item li:hover a {
+	color: #f11965;
+}
+
+.newsletter input {
+	height: 50px;
+	background-color: #f7f7f9;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	margin-top: 25px;
+	padding: 20px;
+}
+.newsletter-email {
+	position: relative;
+}
+.newsletter-email button {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	background-color: #292929;
+	border: none;
+	height: 50px;
+	width: 100px;
+	border-radius: 5px;
+}
+/*-----------------------------------------------------------------------
+End of of footer sectiion
+-------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------
+---------------------------HOME PAGE 2-----------------------------------
+-------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------------------
+Start of home-2 banner
+-------------------------------------------------------------------------*/
+.banner-area-section.home-2 {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 380px;
+	overflow: visible;
+	padding-top:90px;
+	background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #ffb38d 0%, #000000 100%) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) linear-gradient(to top, #140000 0%, #440000 100%) repeat scroll 0 0;
+
+}
+.width-50{
+	width: 51.5%;
+}
+.banner-area-head h1 {
+	font-size: 52px;
+	color: #fff;
+	font-weight: 300;
+    top: 100px;
+}
+.banner-text {
+	max-width: 650px;
+}
+.banner-area-head  span {
+	color: #f1f1f1;
+	font-size: 26px;
+}
+.banner-area-content {
+	position: relative;
+}
+.banner-mock-up {
+	position: absolute;
+	left: 0;
+}
+.banner-mock-up.home-1 {
+	top: -35px;
+}
+/* add new style */
+.banner-text-custom{
+    position: relative;
+    top: 150px;
+}
+.banner-slider {
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+.banner-slider_moblile img {
+	max-width: 100%;
+	text-align: center;
+	width: auto;
+	display: inline-block;
+}
+.banner-slider_moblile {
+	text-align: center;
+	z-index: 3;
+	position: relative;
+	display: inline-block;
+}
+.banner-area-section.home-3.home-2 {
+	overflow: hidden;
+	padding-top: 285px;
+}
+.banner-slide-area {
+	max-width: 300px;
+	position: absolute;
+	top: 110px;
+	right: 18px;
+}
+.banner-slide-area .owl-dot {
+	height: 15px;
+	width: 15px;
+	background-color: #ee0b76;
+	border-radius: 100%;
+	margin-bottom: 15px;
+}
+.banner-slide-area .owl-dot.active {
+	border: 2px solid #fff;
+}
+.banner-slide-area .owl-controls {
+	position: absolute;
+	right: -50px;
+	top: 50px;
+}
+.extra-features-section.v-2 {
+	background-color: #f7f7f9;
+}
+.extra-features-section.v-2 .section-content {
+	padding-top: 100px;
+}
+.extra-features-section .extra-features-content.v2 .extra-left .features-icon,
+.extra-features-section .extra-features-content.v2 .extra-right .features-icon {
+	background-color: #ecf0f1;
+	position: relative;
+}
+.lightbtn{
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255) !important;
+    background-color: #a71010;
+    border: 1px solid white;
+}
+.lightbtn:hover{
+    color: rgb(255, 255, 255) !important;
+    background-color: #800606;
+
+}
+/*-----------------------------------------------------------------------
+End of home-2 banner
+-------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------
+Start of team member section
+-------------------------------------------------------------------------*/
+.team-social {
+	padding: 12px;
+}
+.team-social li a {
+	color: #fff;
+	padding: 4px 5px;
+	background-color: transparent;
+	border: 6px solid transparent;
+}
+.team-social li a:hover {
+	background-color: #fa9ca4;
+	border: 6px solid #f76b84;
+	border-radius: 100%;
+}
+/*-----------------------------------------------------------------------
+End of team member section
+-------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------
+Start of blog area section
+-------------------------------------------------------------------------*/
+.blog-time span {
+	color: #fa4d23;
+}
+.blog-link h2 {
+	font-size: 26px;
+}
+.blog-meta span a {
+	color: #959595;
+}
+/*-----------------------------------------------------------------------
+End of blog area section
+-------------------------------------------------------------------------*/
+
+.google-map-container {
+	width: 100%;
+	height: 500px;
+	background-color: #dddddd;
+}
+.load-more {
+	margin-top: 50px;
+}
+
+
+
+.showcase-slider{direction: ltr}
+
+/* / custom style /  */
+.mobile-rule-image{
+display: none;
+}

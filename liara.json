@@ -1,0 +1,9 @@
+{
+    "app" : "mafia-prj",
+    "disks": [
+        {
+          "name": "public-disk",
+          "mountTo": "public"
+        }
+      ]
+  }

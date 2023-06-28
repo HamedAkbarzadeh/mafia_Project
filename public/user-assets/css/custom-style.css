@@ -1,0 +1,579 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir.woff2') format('woff2'),
+    url('../fonts/Vazir.woff') format('woff'),
+    url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Bold.woff2') format('woff2'),
+    url('../fonts/Vazir-Bold.woff') format('woff'),
+    url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Light.woff2') format('woff2'),
+    url('../fonts/Vazir-Light.woff') format('woff'),
+    url('../fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Medium.eot');
+    src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Medium.woff2') format('woff2'),
+    url('../fonts/Vazir-Medium.woff') format('woff'),
+    url('../fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Thin.eot');
+    src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Thin.woff2') format('woff2'),
+    url('../fonts/Vazir-Thin.woff') format('woff'),
+    url('../fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black.eot');
+    src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Black.woff2') format('woff2'),
+    url('../fonts/Vazir-Black.woff') format('woff'),
+    url('../fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+/*---------------------------------- End of fonts ---------------------------------- */
+
+
+
+
+body {
+    font-family: 'Vazir', sans-serif !important;
+}
+
+.ltr {
+    direction:ltr;
+}
+
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.dropdown-item {
+    text-align: right;
+}
+.dropdown-footer, .dropdown-header {
+    text-align: center;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-left: .5rem;
+}
+
+/*---------------------------------- Start of font-size ---------------------------------- */
+.font-12{
+    font-size: 12px;
+}
+.font-size-30px{
+    font-size: 30px;
+}
+.font-size-37px{
+    font-size: 37px;
+}
+.font-custom{
+    font-size: 16px;
+    font-weight: 100;
+    /* padding-bottom: 19px; */
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+.font-custom-2{
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+/*---------------------------------- End of font-size ---------------------------------- */
+
+/*---------------------------------- Start of bg-color ---------------------------------- */
+.bg-gray{
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, #5f5d5c 0%, #464646 100%) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #6b6b6b 0%, #2c2c2c 100%) repeat scroll 0 0;
+}
+.bg-dark-gray{
+    background-color: rgb(81, 81, 81);
+    color: white;
+}
+.text-dark-org{
+    color: #464646;
+}
+.color-white{
+    color: white;
+}
+/*---------------------------------- end of bg-color ---------------------------------- */
+
+/*---------------------------------- start of competition-styles ---------------------------------- */
+
+.custom-item-event{
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    padding: 8px 15px;
+    position:relative;
+    /* width: 30%; */
+    height: auto;
+    padding-bottom: 20px;
+    background-color: #343a40;
+    color: #fff;
+    /* margin: 5px; */
+    margin: 2px;
+}
+.event-item-a{
+    background-color: red;
+    text-decoration: none;
+    width: 100%;
+}
+.custom-item-event:hover{
+    cursor: pointer;
+    background-color: #252a2e;
+
+}
+
+.custom-item-event::after{
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    right: 9px;
+    bottom: 9px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+.more-info-event{
+    width: 95%;
+    position: absolute;
+    right: 9px;
+    bottom: 22px;
+    left: 9px;
+    border-radius: 0  0 4px 10px;
+    background: rgb(224,18,18);
+    font-size: 13px;
+    font-weight: 100;
+    margin-right: 0;
+    padding-right: 0;
+    background: linear-gradient(90deg, rgba(224,18,18,0) 35%, rgba(224,18,18,1) 100%);
+    color: #fff;
+}
+.more-info-event i{
+    position: relative;
+    top: 1.3px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 13px solid rgb(255, 255, 255);
+    /* margin-left: 5px; */
+    margin: auto 0 auto 2px;
+    border-radius: 4px;
+  }
+
+  .image-cutomize{
+    width: 50px;
+    /* margin-left: 5px; */
+    height: 150px;
+    margin-top: 10px;
+    /* padding-top: 13px; */
+    position: relative;
+}
+
+  .icon-self{
+      position: relative;
+      /* margin-left: 0; */
+      margin-right: auto;
+      margin-top: 0;
+      margin-left: 33px;
+  }
+  .custom-badge{
+    position: absolute;
+    height: 20px;
+    top: 15px;
+    left: 15px;
+}
+/* error-input */
+.error-input{
+    border: 1px #CED4DA solid;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+    width: 100%;
+    padding: 2px 5px;
+    background-color: #f1f1f1e0;
+    color: rgb(255, 30, 30) !important;
+    font-weight: bold;
+}
+.error-input::before{
+    content: ' * ';
+}
+.roleMafiaSpan{
+    padding: 1px 5px;
+    border-radius: 8px;
+    color: white;
+    background-color: #04293A;
+}
+
+.successSpan{
+    padding: 1px 5px;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid rgb(241, 241, 241);
+    background-color: #d2e9d2;
+}
+.dangerSpan{
+    padding: 1px 5px;
+    border-radius: 8px;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #f3e1e1;
+}
+.infoSpan{
+    padding: 1px 5px;
+    border-radius: 8px;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #e1e6f3;
+}
+/*---------------------------------- end of competition-styles ---------------------------------- */
+
+/*---------------------------------- start of profile-styles ---------------------------------- */
+.activity-item:hover{
+    font-weight: bold;
+}
+.img-profile img{
+    width: 100px !important;
+    border-radius: 50%;
+    margin: auto;
+    padding: auto;
+    /* height: 20px !important; */
+}
+.img-radius-custom{
+    width: 40px !important;
+    border-radius: 50%;
+    /* margin-left: 10px; */
+}
+.img-profile-active{
+    border-radius: 5px;
+    /* padding: 5px; */
+    background: #ceecf6;
+}
+.radio-visibil{
+    visibility: hidden;
+}
+
+.important-label::after{
+    content: ' (وارد کردن فیلد اجباری است) ';
+    color: rgb(224,18,18);
+    font-size: 11px;
+    margin: 0 1px;
+}
+.opt-label::after{
+    content: ' (وارد کردن فیلد اختیاری است) ';
+    color: rgb(18, 169, 224);
+    font-size: 11px;
+    margin: 0 1px;
+}
+.opt-label-img::after{
+    content: ' (وارد کردن فیلد اختیاری است و باید حجم عکس کمتر از 1 مگابایت باشد و پسوند های مجاز jpg,png,jpeg,gif) ';
+    color: rgb(18, 169, 224);
+    font-size: 11px;
+    margin: 0 1px;
+}
+.text-info{
+    color: rgb(18, 169, 224);
+    font-size: 14px;
+    margin: 0 1px;
+}
+/*---------------------------------- end of profile-styles ---------------------------------- */
+
+/*---------------------------------- start of role-styles ---------------------------------- */
+
+.mafia-info-item{
+    padding: 20px;
+    height: auto;
+    background: #343a40;
+    color: white;
+    border-radius: 10px;
+    /* margin: 2px; */
+}
+.mafia-info-item::after{
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    right: 9px;
+    bottom: 9px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+/*---------------------------------- end of role-styles ---------------------------------- */
+
+/*------------------------------------ contacts-list ------------------------------------*/
+
+.contacts-list-img {
+    float: right;
+}
+
+.contacts-list-info {
+    margin-right: 45px;
+    margin-left: 0;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    direction: ltr;
+}
+
+.sidebar > div:first-child {
+    direction: rtl;
+}
+
+.control-sidebar, .control-sidebar:before {
+    left: -250px;
+    right: auto;
+    transition: left .3s ease-in-out;
+}
+
+.control-sidebar-slide-open .control-sidebar, .control-sidebar-slide-open .control-sidebar:before {
+    left: 0;
+    right: auto;
+}
+
+.small-box .icon {
+    right:auto;
+    left:10px;
+}
+
+.nav-sidebar .nav-link>p>.right {
+    left: 1rem;
+    right: auto;
+}
+
+.nav-sidebar>.nav-item .nav-icon {
+    margin-right: 0;
+    margin-left: .2rem;
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-left: 0rem !important;
+        margin-right: 4.6rem !important;
+        z-index:100;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar:before {
+        margin-right: 0;
+        width: 4.6rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .content-wrapper, .main-footer, .main-header {
+        transition: margin-right .3s ease-in-out;
+        margin-right: 250px;
+        margin-left : 0;
+        z-index: 3000;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .main-sidebar, .main-sidebar:before {
+        box-shadow: none!important;
+        margin-right: -250px;
+        margin-left: 0;
+    }
+
+    .content-wrapper, .content-wrapper:before, .main-footer, .main-footer:before, .main-header, .main-header:before {
+        margin-right: 0;
+    }
+
+    .sidebar-open .main-sidebar, .sidebar-open .main-sidebar:before {
+        margin-right: 0;
+        z-index: 4000;
+    }
+}
+
+.sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar:before {
+    margin-right: -250px;
+}
+
+.main-sidebar {
+    left: auto;
+    right:0;
+}
+/* Cards */
+
+.card-header>.card-tools {
+    right:auto;
+    left:1rem;
+}
+
+.user-block img {
+     float: right;
+}
+
+.attachment-block .attachment-img {
+    float: right;
+}
+
+.attachment-block .attachment-pushed {
+    margin-left: 0px;
+    margin-right: 110px;
+}
+
+.card-comments .card-comment img, .img-lg, .img-md, .img-sm, .user-block.user-block-sm img {
+    float: right;
+}
+
+.card-comments .comment-text {
+    margin-right: 40px;
+    margin-left: 0;
+}
+
+.card-comments .card-comment img+.img-push, .img-sm+.img-push, .user-block.user-block-sm img+.img-push {
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+.user-block .comment, .user-block .description, .user-block .username {
+    margin-right: 50px;
+    margin-left: 0px;
+}
+
+.btn-group-vertical {
+    align-items: center;
+}
+
+
+/*------------------------- Form ----------------------------*/
+.select2-container .select2-search--inline {
+    float: right;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    text-align: right;
+}
+
+/*----------------------- Extra Page ---------------------------*/
+.error-page>.headline {
+    float: right;
+}
+
+.error-page>.error-content {
+    margin-right: 190px;
+    margin-left: 0;
+}
+
+.lockscreen-image {
+    left: auto;
+    right:-10px;
+}
+
+.lockscreen-credentials {
+    margin-left: 0px;
+    margin-right: 70px;
+}
+
+.nav {
+    padding-inline-start: 0px !important;
+}
+
+/*---------------------------------- Persian Date Picker ---------------------------------- */
+
+.datepicker-plot-area {
+    font-family: 'Vazir', sans-serif;
+}
+
+/*---------------------------------- dark-theme for user-panel ---------------------------------- */
+.bg-sidebar{
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, #04293A 0%, #464646 100%) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #1d1d1d 0%, #2c2c2c 100%) repeat scroll 0 0;
+}
+.bg-header{
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #111111 0%, #111111 100%) repeat scroll 0 0;
+}
+.bg-user-panel-name{
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, #4C3575 0%, #02202e 100%) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) linear-gradient(to top, #1d1d1d 40%, #636363 100%) repeat scroll 0 0;
+}
+
+.back-mafia{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.945) 35%, rgb(27, 0, 102) 100%);
+    }
+.back-citizen{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.945) 35%, rgb(0, 44, 58) 100%);
+}
+.back-independent{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.945) 35%, rgb(109, 8, 8) 100%);
+}
+.back-mafia-more-info{
+    background: linear-gradient(90deg, rgba(224,18,18,0) 35%, rgb(61, 55, 119) 100%);
+}
+.back-citizen-more-info{
+    background: linear-gradient(90deg, rgba(224,18,18,0) 35%, rgb(36, 92, 109) 100%);
+}
+.back-independent-more-info{
+    background: linear-gradient(90deg, rgba(224,18,18,0) 35%, rgb(107, 45, 45)100%);
+}
+
+/* //// */
+
+.back-mafia-modern{
+    background: linear-gradient(50deg, rgb(0, 0, 0) 50%, rgb(102, 0, 59) 100%);
+}
+.back-mafia-modern-more-info{
+    background: linear-gradient(90deg, rgba(224,18,18,0) 35%, rgb(121, 44, 89)100%);
+}
+.back-mafia-modern::after{
+    border: 1px solid rgb(235, 233, 233);
+}
+
+.back-mafia-classic{
+    background: linear-gradient(50deg, rgb(0, 0, 0) 50%, rgb(112, 112, 111) 100%);
+}
+.back-mafia-classic-more-info{
+    background: linear-gradient(90deg, rgba(224,18,18,0) 35%, rgba(112, 112, 111, 0.699)100%);
+}
+.back-mafia-classic::after{
+    border: 1px solid rgb(235, 233, 233);
+}
+/*---------------------------------- dark-theme for user-panel ---------------------------------- */

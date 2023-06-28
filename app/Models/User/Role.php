@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Models\User;
+
+use App\Models\Permission\Permission;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Role extends Model
+{
+    use HasFactory , SoftDeletes; 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['name' , 'description' , 'status'];
+
+    public function permissions()
+    {
+        return $this->belongsToMany(Permission::class);
+    }
+    public function users()
+    {
+        return $this->belongsToMany(User::class);
+    }
+}

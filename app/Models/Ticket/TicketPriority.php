@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models\Ticket;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class TicketPriority extends Model
+{
+    use HasFactory;
+    protected $fillable = ['name' , 'status']; 
+
+
+    
+    public function ticket()
+    {
+        return $this->hasMany(Ticket    ::class);
+    }
+}
